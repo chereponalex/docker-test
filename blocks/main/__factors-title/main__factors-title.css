@@ -1,0 +1,9 @@
+.main__factors-title {
+    font-family: "Atlas Grotesk", Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 115%;
+    max-width: 745px;
+    margin: 40px 0 40px 0;
+    text-align: center;
+}

@@ -1,0 +1,17 @@
+.navbar__list-item {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  color: black;
+  text-decoration: none;
+  max-width: 420px;
+  margin: 26px 0 0 0;
+}
+.navbar__list-item:hover {
+  text-decoration: underline;
+}
+
+.navbar__list-item-link {
+  color: black;
+  text-decoration: none;
+}

@@ -1,0 +1,51 @@
+.article {
+
+}
+
+/*замена стиля main__title для неглавной страницы*/
+.article__title {
+    font-family: "Atlas Grotesk", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 115%;
+    max-width: 750px;
+    margin: 70px 0 40px 0;
+    text-align: center;
+}
+
+.article__title_calc {
+    max-width: 765px;
+    margin: 100px 0 45px;
+}
+
+.article__title_calc-subtitle {
+    font-size: 24px;
+    line-height: 150%;
+    color: #001520;
+    margin: 30px 0 30px 0;
+}
+
+.article__title_calc-subtitle:first-child {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .article__title {
+        margin-bottom: 20px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .article__title {
+        text-align: start;
+        align-self: baseline;
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .article__title {
+        font-size: 24px;
+    }
+}

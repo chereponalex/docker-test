@@ -1,0 +1,12 @@
+@import "_active/tabs__tab_active.css";
+@import "_inactive/tabs__tab_inactive.css";
+
+.tabs__tab {
+    border-radius: 10px 10px 0 0;
+    min-width: 440px;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

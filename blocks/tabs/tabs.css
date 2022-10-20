@@ -1,0 +1,10 @@
+@import "__tab/tabs__tab.css";
+@import "__text/tabs__text.css";
+@import "__number/tabs__number.css";
+
+.tabs {
+    margin: 70px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

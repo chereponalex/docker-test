@@ -1,0 +1,13 @@
+.about__button {
+    background: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    min-width: 379px;
+    min-height: 300px;
+    transition: ease-in-out 200ms;
+    cursor: pointer;
+}
+
+.about__button:hover {
+    opacity: 0.6;
+}

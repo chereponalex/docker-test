@@ -1,0 +1,32 @@
+.comparison__button {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    align-items: flex-start;
+    border: 1px solid white;
+    border-radius: 10px;
+    min-width: 555px;
+    min-height: 280px;
+    transition: ease-in-out 200ms;
+    cursor: pointer;
+    padding: 0;
+}
+
+.comparison__button:hover {
+    background: white;
+    color: black;
+}
+
+.comparison__button:hover .comparison__text {
+    color: black;
+}
+
+.comparison__button:hover .about__text {
+    color: black;
+}
+
+.comparison__button:hover .comparison__image {
+    filter: drop-shadow(0px 0px 6px rgba(53,162,183, 0.7))
+}

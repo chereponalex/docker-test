@@ -1,0 +1,59 @@
+.rating {
+    max-width: 100vw;
+    overflow-x: scroll;
+}
+
+.rating__scroll-warning {
+    display: none;
+    margin: 20px auto 0;
+    width: 50%;
+    max-width: 340px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating__scroll-text {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.rating__title {
+    font-family: "Atlas Grotesk", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 65px;
+    text-align: center;
+    color: #001520;
+    margin: 70px 0 60px 0;
+    max-width: 1000px;
+}
+
+.rating__scroll-image {
+    height: 38px;
+    width: 38px;
+    margin-right: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    .rating {
+        max-width: 100vw;
+        align-items: start;
+    }
+    .rating__scroll-warning {
+        max-width: 300px;
+        display: flex;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .rating__scroll-warning {
+        max-width: 290px;
+    }
+
+    .rating__scroll-image {
+        margin-right: 4px;
+    }
+}

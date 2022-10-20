@@ -1,0 +1,41 @@
+@import "__container/team__container.css";
+@import "__leader-description/team__leader-description.css";
+@import "__title/team__title.css";
+@import "__container/team__container.css";
+
+@import "__leaders/team__leaders.css";
+
+@import "__leader-image/team__leader-image.css";
+@import "__leader-image/team__leader-image.css";
+@import "__leader-name/team__leader-name.css";
+
+@import "__members/team__members.css";
+
+@import "__member-name/team__member-name.css";
+@import "__member-description/team__member-description.css";
+
+@import "__text/team__text.css";
+
+
+
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 110px 0;
+    width: 78%;
+    max-width: 1125px;
+    color: white
+}
+
+@media screen and (max-width: 768px) {
+    .team {
+        margin-top: 70px;
+        width: 95%;
+    }
+}
+
+
+

@@ -1,0 +1,6 @@
+.chosen-tab__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 72px;
+}

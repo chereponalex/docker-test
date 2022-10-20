@@ -1,0 +1,13 @@
+.segmentation__button {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+    background: #35a2b7;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    min-width: 745px;
+    min-height: 60px;
+    margin: 70px 0 110px 0;
+    cursor: pointer;
+}

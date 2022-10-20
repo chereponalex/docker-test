@@ -1,0 +1,7 @@
+.main__texts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 52%;
+    max-width: 1440px;
+}

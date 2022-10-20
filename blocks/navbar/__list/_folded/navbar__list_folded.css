@@ -1,0 +1,5 @@
+.navbar__list_folded {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 200ms, opacity 200ms ease-in-out;
+}

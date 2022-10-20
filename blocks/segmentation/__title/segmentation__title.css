@@ -1,0 +1,9 @@
+.segmentation__title {
+    font-family: "Atlas Grotesk", Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+    max-width: 860px;
+    margin: 5px 0 0 0; /*без этого немного съезжает вёрстка*/
+    line-height: 115%;
+    text-align: center;
+}

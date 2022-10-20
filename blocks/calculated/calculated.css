@@ -1,0 +1,129 @@
+@import "./__image/calculated__image.css";
+@import "./__title/calculated__title.css";
+@import "./__text/calculated__text.css";
+
+.calc__info {
+    margin-top: 70px;
+    margin-bottom: 110px;
+    width: 83%;
+    background: #001520;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 57px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 10px
+}
+
+.calc__info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 57px;
+    border-left: 1px solid white;
+    min-height: 210px;
+    margin: 70px 0;
+    max-width: 300px;
+}
+
+.calc__info-container:first-child {
+    border-left: none;
+}
+
+.calc__info-container:last-child {
+    margin-right: 57px;
+}
+
+.calc__info-accented {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    color: #35A2B7;
+    font-family: "Fugue Mono KB", Helvetica, Arial, sans-serif;
+}
+
+.calc__info-accented-text {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0 10px 0 0;
+}
+
+.calc__info-accented-number {
+    font-size: 60px;
+    margin: 0 10px 0 0;
+}
+
+.calc__info-text {
+    font-size: 16px;
+    line-height: 150%;
+    color: white;
+}
+
+@media screen and (max-width: 1024px) {
+    .calc__info {
+        grid-template-columns: repeat(3, 1fr);;
+        gap: 10px;
+    }
+
+    .calculated__title {
+        margin: 40px 0;
+    }
+
+    .calculated__text {
+        margin: 0 0 40px 0;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .calc__info {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.5fr repeat(2, 1fr);
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+
+    .calc__info-container {
+        padding: 0 0 0 12px;
+        border-left: none;
+        justify-self: center;
+        margin: 0;
+        min-height: 180px;
+        border-top: 1px solid white;
+        max-width: 330px;
+    }
+
+    .calc__info-accented {
+        margin-top: 20px;
+        align-self: center;
+    }
+
+    .calc__info-container:first-child {
+        margin: 40px 0 0 0;
+        border-top: none;
+    }
+
+    .calc__info-container:last-child {
+        margin: 0;
+    }
+
+    .calculated__title {
+        font-size: 42px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .calc__info {
+        width: 95%;
+    }
+
+    .calculated__title {
+        font-size: 48px;
+        line-height: 42px;
+        text-align: start;
+        word-break: break-word;
+    }
+}

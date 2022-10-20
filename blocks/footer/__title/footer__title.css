@@ -1,0 +1,10 @@
+.footer__title {
+    font-family: "Fugue Mono KB", Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 41px;
+    text-transform: uppercase;
+    max-width: 30%;
+    margin: 70px 0 0 0;
+    cursor: pointer;
+}

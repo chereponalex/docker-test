@@ -1,0 +1,62 @@
+.button {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+    background: #35a2b7;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 25%;
+    min-width: 475px;
+    max-width: 745px;
+    min-height: 60px;
+    margin: 0 0 70px 0;
+    cursor: pointer;
+    transition: ease-in-out 200ms;
+}
+
+.button:hover {
+    background: #287989;
+}
+
+.button_long {
+    width: 70%;
+    align-self: center;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    .button {
+        min-width: 320px;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .button_long {
+        max-width: 95%;
+        align-self: center;
+    }
+
+    .button_wide {
+        max-width: 99%;
+        line-height: 27px;
+        padding: 20px 10px;
+    }
+    .button_start {
+        text-align: start;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .button {
+        width: 100%;
+        min-width: 280px;
+    }
+
+    .button_long {
+        width: 100%;
+        min-width: 268px;
+    }
+}

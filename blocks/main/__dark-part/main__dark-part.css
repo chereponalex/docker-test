@@ -1,0 +1,7 @@
+.main__dark-part {
+    background-color: #001520;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px 0 0 0;
+}

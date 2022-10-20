@@ -1,0 +1,7 @@
+.navbar__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 93%;
+    max-width: 1440px;
+}

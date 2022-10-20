@@ -1,0 +1,433 @@
+.map-popup {
+    visibility: visible;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,21,32,0.8);
+    transition: ease-in-out 200ms;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.map-popup_hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.map-popup__container {
+    width: 55%;
+    max-width: 800px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map-popup__header {
+    background-color: #0D2B40;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.map-popup__header-container {
+    display: flex;
+    width: 95%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 20px 10px 20px;
+}
+
+.map-popup__title {
+    margin: 0;
+    font-family: "Fugue Mono KB", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+}
+
+.map-popup__close {
+    width: 14px;
+    height: 14px;
+    background-image: url('../../public/images/map-popup/icons/close-new.svg');
+    background-position: 0 0;
+    background-size: contain;
+    cursor: pointer;
+    transition: ease-in-out 200ms;
+    border: none;
+    background-color: #0d2b40;
+    fill: #FFFFFF;
+    background-repeat: no-repeat;
+}
+
+.map-popup__header-info {
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.map-popup__character {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 49%;
+    margin: 10px 0 15px 0;
+}
+
+.map-popup__character-text {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+}
+
+.map-popup__character-icon {
+    width: 20px;
+    height: 30px;
+    margin-right: 12px;
+}
+
+.map-popup__character-power {
+    min-width: 160px;
+    margin: 0;
+    padding: 10px 0;
+    line-height: 100%;
+    background-color: #0d2b40;
+    text-align: center;
+}
+
+.map-popup__character-power_red {
+    background-color: #EC715C;
+}
+
+.map-popup__character-power_blue {
+    background-color: #5E88C1;
+}
+
+.map-popup__character-power_orange {
+    background-color: #F3B26F;
+}
+
+.map-popup__character-power_green {
+    background-color: #8ECEBD;
+}
+
+.map-popup__count {
+    margin: 10px 0 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 49%;
+}
+
+.map-popup__count-accented {
+    margin: 0;
+    font-family: "Fugue Mono KB", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.map-popup__count-text {
+    font-size: 13px;
+    width: 60%;
+    margin: 0;
+}
+
+.map-popup__info {
+    display: flex;
+    width: 95%;
+    margin: 10px 0;
+}
+
+.map-popup__total-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid #D9D9D9;
+    margin-right: 18px;
+}
+
+.map-popup__total {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.map-popup__texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.map-popup__decorative {
+    max-width: 23px;
+    max-height: 21px;
+    margin-right: 8px;
+}
+
+.map-popup__info-accented {
+    font-family: "Fugue Mono KB", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    color: #001520;
+    margin: 0;
+}
+
+.map-popup__info-text {
+    font-size: 13px;
+    max-width: 130px;
+    margin: 0;
+}
+
+.map-popup__info-parts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.map-popup__part {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.map-popup__image {
+
+}
+
+.map-popup__legend-and-share {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.map-popup__legend {
+    color: #001520;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    margin: 10px 20px 10px 10px;
+    width: 75%;
+    row-gap: 10px;
+    column-gap: 10px;
+    border-right: 1px solid #D9D9D9;
+}
+
+.map-popup__share {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 16px 0;
+}
+
+.map-popup__share-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.map-popup__share-button {
+    max-width: 20px;
+    max-height: 20px;
+    margin: 0 0 0 15px;
+    transition: ease-in-out 200ms;
+}
+
+.map-popup__share-button:hover {
+    opacity: 0.6;
+}
+
+.map-popup__legend-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 80%;
+}
+
+.map-popup__legend-text {
+    font-size: 13px;
+    color: #001520;
+    margin: 0 0 0 10px;
+}
+
+@media screen and (max-width: 1170px) {
+    .map-popup__character-power {
+        min-width: 100px;
+        font-size: 12px;
+    }
+
+    .map-popup__count-accented {
+        font-size: 24px;
+    }
+
+    .map-popup__legend-and-share {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .map-popup__legend {
+        width: 95%;
+        border: none;
+    }
+
+    .map-popup__share {
+        border-top: 1px solid #D9D9D9;
+        width: 95%;
+        flex-direction: row-reverse;
+        align-self: center;
+        padding-top: 10px;
+        align-items: center;
+    }
+
+    .map-popup__share-buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .map-popup__share-button {
+        margin: 0 0 0 11px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .map-popup__container {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .map-popup__container {
+        min-width: 800px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .map-popup__count-accented {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .map-popup__title {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .map-popup__container {
+        width: 80%;
+    }
+
+    .map-popup__character-icon {
+        width: 16px;
+        height: 26px;
+        margin-right: 6px;
+    }
+
+    .map-popup__character-text {
+        font-size: 9px;
+    }
+
+    .map-popup__character-power {
+        min-width: 70px;
+        font-size: 9px;
+    }
+
+    .map-popup__count-accented {
+        font-size: 16px;
+        line-height: 15px;
+        /*max-width: 10%;*/
+    }
+
+    .map-popup__count-text {
+        font-size: 9px;
+        line-height: 11px;
+    }
+
+    .map-popup__decorative {
+        margin: 0 0 5px 0;
+        max-width: 15px;
+        max-height: 15px;
+    }
+
+    .map-popup__info {
+    }
+
+    .map-popup__total {
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .map-popup__info-accented {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .map-popup__info-text {
+        font-size: 9px;
+        line-height: 11px;
+        margin: 0 10px 0 0;
+    }
+
+    .map-popup__part {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .map-popup__legend {
+        margin: 5px 10px;
+        row-gap: 5px;
+        column-gap: 5px;
+    }
+
+    .map-popup__legend-text {
+        font-size: 8px;
+        margin: 0 0 0 5px;
+    }
+
+    .map-popup__total-container {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .map-popup__container {
+        width: 95%;
+        max-width: 420px;
+    }
+
+    .map-popup__count {
+        width: 45%;
+    }
+
+    .map-popup__count-accented {
+        width: 30%;
+    }
+
+    .map-popup__count-text {
+        width: 70%;
+    }
+}

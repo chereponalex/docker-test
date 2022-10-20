@@ -1,0 +1,87 @@
+@import "__container/footer__container.css";
+@import "__title/footer__title.css";
+@import "__link/footer__link.css";
+@import "__links/footer__links.css";
+@import "__links-container/footer__links-container.css";
+@import "__links-title/footer__links-title.css";
+@import "__nav/footer__nav.css";
+@import "__made-by/footer__made-by.css";
+@import "__made-by-text/footer__made-by-text.css";
+@import "__made-by-container/footer__made-by-container.css";
+@import "__contacts/footer__contacts.css";
+@import "__contact/footer__contact.css";
+@import "__email-icon/footer__email-icon.css";
+@import "__contact-text/footer__contact-text.css";
+@import "__contacts-title/footer__contacts-title.css";
+@import "__info/footer__info.css";
+@import "__contact-link/footer__contact-link.css";
+
+.footer {
+    width: 100%;
+    background-color: #001520;
+    border-top: 1px solid white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+@media screen and (max-width: 1280px) {
+    .footer__container {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer__container {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .footer__nav {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .footer__made-by {
+        flex-direction: column;
+    }
+
+    .footer__contacts {
+        margin: 0 0 70px 0;
+    }
+
+    .footer__contact-text {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .footer__info {
+        align-items: flex-start;
+        border-top: 1px solid rgba(255, 255, 255, 0.5)
+    }
+
+    .footer__made-by {
+        width: 95%;
+    }
+
+    .footer__made-by-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__made-by-text {
+        font-size: 18px;
+        margin: 70px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer__title {
+        font-size: 24px;
+    }
+}

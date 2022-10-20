@@ -1,0 +1,9 @@
+.footer__contact-link {
+    text-decoration: none;
+    color: #287989;
+    transition: ease-in-out 200ms;
+}
+
+.footer__contact-link:hover {
+    opacity: 0.6;
+}

@@ -1,0 +1,94 @@
+/*изменения для bootstrap dropdown*/
+
+.dropdown {
+    position: unset;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-custom-toggle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.dropdown-icon {
+    max-width: 20px;
+    max-height: 20px;
+    align-self: center;
+}
+
+.dropdown-custom-toggle-text {
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dropdown-item-text {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #7e7e7e;
+}
+
+@media screen and (max-width: 768px) {
+    .dropdown-toggle {
+        max-width: 420px;
+    }
+
+    .dropdown-menu {
+        width: 90%;
+        max-width: 420px;
+    }
+
+    .dropdown-item {
+        width: 90%;
+        max-width: 420px;
+        padding: 6px 2px;
+        font-size: 12px;
+    }
+
+    .dropdown-item-text {
+        width: 90%;
+        max-width: 420px;
+        padding: 6px 2px;
+        font-size: 12px;
+    }
+
+    .dropdown-custom-toggle-text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .dropdown-toggle {
+        max-width: 320px;
+    }
+
+    .dropdown-menu {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    .dropdown-item {
+        width: 90%;
+        max-width: 320px;
+        padding: 6px 2px;
+        font-size: 12px;
+    }
+
+    .dropdown-item-text {
+        width: 90%;
+        max-width: 320px;
+        padding: 6px 2px;
+        font-size: 12px;
+    }
+}

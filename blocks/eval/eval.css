@@ -1,0 +1,45 @@
+@import "__text/eval__text.css";
+@import "__image/eval__image.css";
+@import "__texts/eval__texts.css";
+@import "__texts-item/eval__texts-item.css";
+
+.eval__info {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    align-self: center;
+    max-width: 700px;
+    margin: 30px 0 70px 0;
+    gap: 72px;
+}
+
+.eval__info-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.eval__info-img {
+    margin-right: 35px;
+    width: 100px;
+    height: 100px;
+}
+
+.eval__info-texts {
+    margin: 0;
+}
+
+.eval__info-heading {
+    margin: 0;
+}
+
+.eval__info-text {
+    margin: 24px 0 0 0;
+}
+
+@media screen and (max-width: 425px) {
+    .eval__text {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+}

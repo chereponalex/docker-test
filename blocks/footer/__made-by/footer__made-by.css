@@ -1,0 +1,9 @@
+.footer__made-by {
+    width: 80%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 70px 0;
+    align-items: baseline;
+}

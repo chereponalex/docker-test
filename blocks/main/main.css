@@ -1,0 +1,58 @@
+@import "__title/main__title.css";
+@import "__texts/main__texts.css";
+@import "__text/main__text.css";
+@import "__dark-part/main__dark-part.css";
+@import "__factors/main__factors.css";
+@import "__factors-button/main__factors-button.css";
+@import "__factors-text/main__factors-text.css";
+@import "__factors-image/main__factors-image.css";
+@import "__factors-title/main__factors-title.css";
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .main__factors-text {
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        width: 95%;
+    }
+
+    .main__title {
+        text-align: start;
+        align-self: baseline;
+        font-size: 34px;
+    }
+
+    .main__texts {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .main__factors {
+        width: 95%;
+        margin-top: 40px;
+    }
+    .main__factors-text {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .main__title {
+        font-size: 24px;
+    }
+
+    .main__text {
+        margin: 0 0 20px 0;
+        font-size: 18px;
+    }
+}

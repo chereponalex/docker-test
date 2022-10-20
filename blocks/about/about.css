@@ -1,0 +1,13 @@
+@import "__button/about__button.css";
+@import "__container/about__container.css";
+@import "__title/about__title.css";
+@import "__text/about__text.css";
+
+.about {
+    margin: 110px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+}

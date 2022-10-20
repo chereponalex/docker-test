@@ -1,0 +1,9 @@
+.comparison__title {
+    font-family: "Fugue Mono KB", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 115%;
+    color: #FFFFFF;
+    margin: 0 0 40px 0;
+}

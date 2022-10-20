@@ -1,0 +1,8 @@
+.chosen-tab__text {
+    font-family: "Atlas Grotesk", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 150%;
+    width: 52%;
+    max-width: 750px;
+    margin: 50px 0 50px 0;
+}

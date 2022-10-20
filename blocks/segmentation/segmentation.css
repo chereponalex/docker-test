@@ -1,0 +1,133 @@
+@import "__text/segmentation__text.css";
+@import "__title/segmentation__title.css";
+@import "__button/segmentation__button.css";
+@import "__title-container/segmentation__title-container.css";
+
+.segmentation__image {
+    cursor: pointer;
+    /*max-height: 868px;*/
+}
+
+.segmentation__image-mobile {
+    display: none;
+}
+
+.segmentation__image-container {
+    position: relative;
+}
+
+.segmentation__image-zoom {
+    position: absolute;
+    bottom: 130px;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: ease-in-out 200ms;
+    cursor: pointer;
+}
+
+.segmentation__image-container:hover > .segmentation__image-zoom {
+    visibility: visible;
+    opacity: 1;
+}
+
+.segmentation__title-number {
+    margin-right: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .segmentation__title-container {
+        margin: 0 0 20px 0;
+    }
+
+    .segmentation__image-zoom {
+        bottom: 70px;
+        max-width: 200px;
+        max-height: 200px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .segmentation__title-number {
+    }
+
+    .segmentation__title-container {
+        flex-direction: column;
+        margin: 50px 0 20px 0;
+        align-items: flex-start;
+        align-self: start;
+        justify-content: center;
+    }
+
+    .segmentation__title {
+        font-size: 24px;
+        text-align: start;
+        max-width: 80%;
+        margin: 18px 0 0 0;
+    }
+
+    .segmentation__text {
+        text-align: start;
+        font-size: 18px;
+        margin-bottom: 26px;
+    }
+
+    .segmentation__image {
+        display: none;
+    }
+
+    .segmentation__image-container {
+        display: none;
+    }
+
+    .segmentation__image-mobile {
+        display: flex;
+        background-color: #001520;
+        color: #FFFFFF;
+        border-radius: 10px;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .segmentation__mobile-warning {
+        margin: 13px auto 0;
+        text-align: center;
+        align-self: center;
+        width: 95%;
+        font-size: 14px;
+    }
+
+    .segmentation__mobile-img {
+        max-height: 440px;
+        overflow-x: scroll;
+        cursor: pointer;
+    }
+
+    .segmentation__mobile-img-container {
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .segmentation__image-zoom {
+        visibility: visible;
+        opacity: 1;
+        bottom: 40px;
+        left: 10px;
+    }
+
+    .segmentation__image-mobile-title {
+        font-family: "Atlas Grotesk", Helvetica, Arial, sans-serif;
+        font-size: 24px;
+        line-height: 115%;
+        text-align: center;
+        margin-bottom: 20px;
+        max-width: 90%;
+        align-self: center;
+    }
+}
+

@@ -1,0 +1,63 @@
+@import "__title/comparison__title.css";
+@import "__container/comparison__container.css";
+@import "__button/comparison__button.css";
+@import "__text/comparison__text.css";
+@import "__image/comparison__image.css";
+
+.comparison {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 110px
+}
+
+@media screen and (max-width: 1280px) {
+    .comparison__button {
+        width: 100%;
+        min-width: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .comparison {
+        margin-top: 70px;
+    }
+
+    .comparison__title {
+        text-align: center;
+    }
+
+    .comparison__container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .comparison__button {
+        width: 100%;
+        min-width: 320px;
+        align-items: center;
+        min-height: 170px;
+    }
+
+    .comparison__text {
+        text-align: center;
+        font-size: 24px;
+        margin: 0 24px 20px 24px;
+    }
+
+    .comparison__image {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .comparison__button {
+        width: 95%;
+        min-width: 270px;
+        justify-self: center;
+    }
+
+    .comparison__text {
+        font-size: 24px;
+    }
+}

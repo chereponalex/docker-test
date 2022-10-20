@@ -1,0 +1,9 @@
+.main__text {
+    font-size: 20px;
+    margin: 0 0 40px 0;
+    line-height: 150%;
+}
+
+.main__text:last-child {
+    margin: 0;
+}

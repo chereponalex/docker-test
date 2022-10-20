@@ -1,0 +1,9 @@
+.chosen-tab__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    width: 88%;
+    max-width: 1440px;
+    justify-content: space-between;
+    margin: 0 0 80px 0;
+}

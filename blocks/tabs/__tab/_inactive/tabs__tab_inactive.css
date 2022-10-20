@@ -1,0 +1,8 @@
+.tabs__tab_inactive {
+    transition: ease-in-out 200ms;
+    cursor: pointer;
+}
+
+.tabs__tab_inactive:hover {
+    background: #EDEEEF;
+}

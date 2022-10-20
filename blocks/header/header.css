@@ -1,0 +1,34 @@
+@import "__title/header__title.css";
+@import "__container/header__container.css";
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  background-color: #001520;
+  margin: 0;
+}
+
+@media screen and (max-width: 1280px) {
+  .header__title {
+    width: 100%;
+    font-size: 64px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__container {
+    background-image: url("../../public/images/main__img-mobile.jpg");
+    align-items: start;
+    text-wrap: normal;
+  }
+
+  .header__title {
+    font-size: 45px;
+    line-height: 55px;
+    text-align: start;
+    width: 100%;
+    overflow-wrap: break-word;
+  }
+}

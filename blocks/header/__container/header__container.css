@@ -1,0 +1,16 @@
+.header__container {
+  background-image: url("../../../public/images/main__img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Fugue Mono KB", Helvetica, Arial, sans-serif;
+  width: 93%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto 50px;
+  min-height: 650px;
+  max-width: 1440px;
+  border-radius: 10px;
+}

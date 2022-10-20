@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Atlas Grotesk';
+    font-style:  normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url("./Atlas_Grotesk-Bold-Desktop.otf") format("opentype")
+}
+
+@font-face {
+    font-family: 'Atlas Grotesk';
+    font-style:  normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("./Atlas_Grotesk_LC_Web_Reg_Regular.ttf") format("truetype")
+}

@@ -1,0 +1,40 @@
+@import "__icon/directionsInfo__icon.css";
+@import "__content/directionsInfo__content.css";
+
+.directionsInfo {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        margin-bottom: 70px
+}
+
+.directionsInfo:last-of-type {
+        margin-bottom: 0;
+}
+
+.directionsInfo__title {
+        font-size: 20px;
+        margin: 0 0 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+        .directionsInfo {
+                flex-direction: row;
+        }
+        .directionsInfo__content {
+                padding: 0;
+        }
+        .directionsInfo__icon {
+                width: 60px;
+                height: 60px;
+                margin-right: 24px;
+        }
+        .directionsInfo .main__text {
+                font-size: 18px;
+        }
+}

@@ -1,0 +1,64 @@
+@import "__container/chosen-tab__container.css";
+@import "__portrait-container/chosen-tab__portrait-container.css";
+@import "__row/chosen-tab__row.css";
+@import "__text/chosen-tab__text.css";
+@import "__img/chosen-tab__img.css";
+@import "__img/_large/chosen-tab__img_large.css";
+@import "__item/chosen-tab__item.css";
+@import "__item-text/chosen-tab__item-text.css";
+@import "__item-title/chosen-tab__item-title.css";
+@import "__button/chosen-tab__button.css";
+
+.chosen-tab {
+    background-color: #001520;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+@media screen and (max-width: 1280px) {
+    .chosen-tab__container {
+        grid-column-gap: 10px;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .map__title {
+        text-align: start;
+        align-self: baseline;
+    }
+
+    .chosen-tab {
+        width: 95%;
+        align-items: baseline;
+        margin-bottom: 0;
+    }
+
+    .chosen-tab__text {
+        width: 100%;
+        font-size: 18px;
+        margin: 20px 0 50px 0;
+    }
+
+    .chosen-tab__container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        row-gap: 50px;
+        width: 100%;
+        margin: 0 0 40px 0;
+        align-self: center;
+    }
+
+    .chosen-tab__item-text {
+        font-size: 16px;
+    }
+
+    .chosen-tab__item-title {
+        margin: 10px 0 4px 0;
+    }
+}

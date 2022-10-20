@@ -1,0 +1,9 @@
+.segmentation__text {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: #001520;
+    max-width: 750px;
+    margin: 0 0 40px 0;
+}

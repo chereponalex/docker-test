@@ -1,0 +1,9 @@
+.comparison__text {
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 140%;
+    max-width: 285px;
+    text-align: start;
+    margin: 0 24px
+}

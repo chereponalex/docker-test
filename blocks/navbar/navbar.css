@@ -1,0 +1,43 @@
+@import "__container/navbar__container.css";
+@import "__icon/navbar__icon.css";
+@import "__list/navbar__list.css";
+@import "__list-icon/navbar__list-icon.css";
+@import "__list/_folded/navbar__list_folded.css";
+@import "__list-item/navbar__list-item.css";
+@import "__subtitle/navbar__subtitle.css";
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #001520;
+    justify-content: center;
+    min-height: 70px;
+    transition: ease-in-out 200ms;
+}
+
+/*нужно для того, чтобы при смене позиционирования у навигации на fixed
+не исчезал отступ 70 пикселей, иначе сдвигается вверх основная часть страницы*/
+.navbar__imitation {
+    min-height: 70px;
+    opacity: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar__list {
+        width: 100%;
+        min-height: 100vh;
+        max-width: 1024px;
+    }
+
+    .navbar__list-item {
+        width: 90%;
+        margin: 12px 0 0 12px;
+        font-size: 18px;
+    }
+
+    .navbar__subtitle {
+        margin: 24px 0 0 12px;
+        font-size: 28px;
+    }
+}

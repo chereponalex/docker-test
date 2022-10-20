@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Fugue Mono KB';
+    font-style:  normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url("./fugue_mono_KB.otf") format("opentype")
+}

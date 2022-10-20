@@ -1,0 +1,7 @@
+.eval__texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 0 70px 0;
+    gap: 6px;
+}

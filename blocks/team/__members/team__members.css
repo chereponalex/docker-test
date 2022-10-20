@@ -1,0 +1,34 @@
+.team__members {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+    margin-top: 40px
+}
+
+@media screen and (min-width: 1380px) {
+    .team__members {
+        -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 925px) {
+    .team__members {
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .team__members {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        align-self: flex-start;
+    }
+}

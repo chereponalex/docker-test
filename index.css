@@ -1,0 +1,45 @@
+@import "vendor/normalize.css";
+@import "vendor/fonts/Atlas_Grotesk.css";
+@import "vendor/fonts/Fugue_Mono_KB.css";
+@import "blocks/page/page.css";
+@import "blocks/main/main.css";
+@import "blocks/tabs/tabs.css";
+@import "blocks/about/about.css";
+@import "blocks/comparison/comparison.css";
+@import "blocks/navbar/navbar.css";
+@import "blocks/navbar/_active/navbar_active.css";
+@import "blocks/calculated/calculated.css";
+@import "blocks/eval/eval.css";
+@import "blocks/segmentation/segmentation.css";
+@import "blocks/useful/useful.css";
+@import "blocks/header/header.css";
+@import "blocks/footer/footer.css";
+@import "blocks/legend/legend.css";
+@import "blocks/mapregions/map.css";
+@import "blocks/mapregions/radars.css";
+@import "blocks/chosen-tab/chosen-tab.css";
+@import "blocks/dropdown/dropdown.css";
+@import "blocks/button/button.css";
+@import "blocks/directionsInfo/directionsInfo.css";
+@import "blocks/indexscorestructure/indexscorestructure.css";
+@import "blocks/rating/rating.css";
+@import "blocks/regions/regions.css";
+@import "blocks/article/article.css";
+@import "blocks/portrait/portrait.css";
+@import "blocks/map-popup/map-popup.css";
+@import "blocks/team/team.css";
+
+/*о баге на мобильном и, видимо, решение https://stackoverflow.com/a/10841767*/
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){
+
+    html,
+    body{
+        width:100%;
+        overflow-x:hidden;
+    }
+
+}

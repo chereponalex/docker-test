@@ -1,0 +1,10 @@
+.navbar_active {
+    background-color: #FFFFFF;
+    color: #001520;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    right: 0;
+    height: 70px;
+    z-index: 1;
+}

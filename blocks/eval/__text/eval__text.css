@@ -1,0 +1,10 @@
+.eval__text {
+    font-size: 20px;
+    margin: 0 0 40px 0;
+    max-width: 750px;
+    line-height: 150%;
+}
+
+.eval__text:last-of-type {
+    margin-bottom: 40px;
+}
