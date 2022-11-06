@@ -1,22 +1,23 @@
-FROM node:14.15.3-alpine
+FROM node:14.15.3-alpine AS deps
+WORKDIR /app
 
-# определяем каталог для приложения
-RUN mkdir /frontend
+COPY package*.json ./
+RUN npm i
 
-#после создания каталога, определяем его в качестве рабочего каталога
-WORKDIR /frontend
-
-#копируем package.json для зависимостей
-COPY ./package.json /frontend/
-
-#устанавливаем зависимости
-RUN npm install
-
-#копируем все остальное в наш каталог
-COPY . /frontend/
-
-#билд проекта, выполняется каждый раз, когда мы собираем образ
+FROM node:14.15.3 AS builder
+WORKDIR /app
+COPY . .
+COPY --from=deps /app/node_modules ./node_modules
 RUN npm run build
 
-#команда для выполнения операции со стеком, выполняется каждый раз, когда мы запускаем образ
-CMD ["npm", "start"]
+FROM node:14.15.3-alpine AS runner
+
+WORKDIR /app
+
+COPY --from=builder /app/next.config.js ./
+COPY --from=builder /app/public ./public
+COPY --from=builder /app/.next ./.next
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/package.json ./package.json
+
+CMD npm run start
