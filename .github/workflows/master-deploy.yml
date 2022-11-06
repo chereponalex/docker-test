@@ -5,17 +5,40 @@ on:
     branches:
       - master
 
+env:
+  IMAGE_NAME: testingstrelka-kbcom_frontend
+
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: curl testing
-        run: curl -v telnet://94.26.230.80:22
+      - uses: actions/checkout@v2
+      - name: Build image
+        run: docker build --pull -t $IMAGE_NAME .
+
+      - name: Log into registry
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
+
+      - name: Push image
+        run: |
+          IMAGE_ID=docker.pkg.github.com/${{ github.repository }}/${{ env.IMAGE_NAME }}
+          echo IMAGE_ID=$IMAGE_ID
+          docker tag ${{ env.IMAGE_NAME }} $IMAGE_ID:latest
+          docker push $IMAGE_ID:latest
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
       - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.IP_PROD }}
           username: ${{ secrets.USERNAME_PROD }}
           key: ${{ secrets.PROD_SSH_KEY }}
-          script: echo test
+          script: |
+            IMAGE_ID=docker.pkg.github.com/${{ github.repository }}/${{ env.IMAGE_NAME }}
+            (echo "${{ secrets.GITHUB_TOKEN }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin)
+            (docker rm -f ${{ env.IMAGE_NAME }} || true)
+            docker pull $IMAGE_ID:latest
+            docker run -d --name ${{ env.IMAGE_NAME }} --restart=always -p 0.0.0.0:50004:4000 $IMAGE_ID:latest
