@@ -1,3 +1,5 @@
 module.exports = {
-  target: "serverless",
+  env: {
+    TEST_VARIABLE: 'my-test-variable',
+  },
 }
